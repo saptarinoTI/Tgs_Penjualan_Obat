@@ -1,0 +1,43 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-auth {
+        @apply w-full px-4 py-2 mt-1 text-sm font-medium border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400 focus:bg-white;
+    }
+}
+
+/* Data Tables */
+.dt-length,
+.dt-info {
+    font-size: 14px;
+}
+
+.dt-search,
+.dt-paging {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.dt-length select,
+.dt-search input {
+    padding: 6px 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #969696;
+}
+
+.dt-empty {
+    text-align: center !important;
+}
+
+#example tbody tr td {
+    padding: 10px !important;
+}
